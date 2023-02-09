@@ -9,7 +9,8 @@
 Creation of two ec2 instances each of them to be of different type - `t2.micro` and `t2.medium`
 
 ### How to use
-1. Set values for the desired instance types im the `resource block`:
+1. Clone the repo https://github.com/GitHuberkata/for-each.git
+2. Set values for the desired instance types in the `resource block`:
 ```
 resource "aws_instance" "myec2" {
   ami = "ami-082b5a644766e0e6f"
@@ -27,7 +28,7 @@ tags = {
 ```
 
 
-2. Execute the commands:
+3. Execute the commands:
 - `terraform init`
 - `terraform plan`
 - `terraform apply`
